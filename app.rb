@@ -5,6 +5,7 @@ require 'app/routes'
 
 module HireSource
   class App < Sinatra::Application
+    use Rack::Deflater
     use Routes::HealthCheck
   end
 end
